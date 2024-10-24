@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálago Administrador</title>
+    <link rel="stylesheet" href="./styleadm.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="Logo da Empresa">
+        </div>
+        <div class="elementos-pags">
+            <a href="./indexcarrinho.html"><img src="./assets/carrinho.png" alt="Carrinho" class="img1"></a>
+            <a href="./indexformulario.html"><img src="./assets/login.png" alt="Login" class="img2"></a>
+        </div>
+        <div class="links">
+            <div class="links-config">
+                <a href="./index.html">
+                    <h2>Página Inicial</h2>
+                </a>
+                <a href="./indexcatalogo.html">
+                    <h2>Catálago</h2>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="catalogo">
+            <h1>Catálago</h1>
+        </div>
+
+        <div class="container-pack">
+            <h2 class="pack">Pack gastronómico:</h2>
+        </div>
+
+        <div class="retangulo-catalago">
+            <div class="retangulo-catalago-imgs">
+                <img src="./assets/minhoca.png" alt="Minhoca" class="img-catalago">
+                <img src="./assets/salgadinho.png" alt="Salgadinho" class="img-catalago">
+                <img src="./assets/peixebolha.png" alt="Peixe-Bolha" class="img-catalago">
+            </div>
+        </div>
+
+        <div class="container-pack-texto">
+            <h2 class="pack-texto">Sushi de kraken, salgadinho de escama e bolo de peixe-bolha</h2>
+        </div>
+
+        <div class="container-pack-texto-2">
+            <h2 class="pack-texto">O trio perfeito para seu lanche praiano</h2>
+        </div>
+
+        <hr>
+
+        <div class="cadastrar_produto" id="cadastrar_produto" style="display: block;">
+            <div class="primeiro-container-div2">
+                <h2>Cadastrar novo produto</h2>
+            </div>
+            <div>
+                <form id="formProduto" enctype="multipart/form-data">
+                    <h3>Nome do Produto</h3>
+                    <input type="text" id="nome_produto" name="nome" placeholder="Nome do Produto" required>
+                    <div>
+                        <h3>Preço do Produto</h3>
+                        <input type="number" id="preco" name="preco" placeholder="Preço" required>
+                    </div>
+                    <div>
+                        <h3>Imagem do Produto</h3>
+                        <input type="file" id="file" name="file" accept="image/*" required>
+                    </div>
+                    <button type="button" onclick="cadastrarProduto(event)" class="mt-3">Cadastrar Produto</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="produtos">
+            <h2 class="produtos-texto">Produtos:</h2>
+        </div>
+
+        <div id="catalago-linhas">
+            <div class="produtos-catalago" id="produto-2">
+                <div class="produtos-catalago-adm">
+                    <button onclick="deletarProduto(event)"><img src="./assets/lixeira (1).png" alt="Deletar"
+                            class="lixeira"></button>
+                    <img src="./assets/lapis.png" alt="Editar" class="lapis">
+                </div>
+                <a href="./produto2.html">
+                    <div class="produtos-catalago-imagem">
+                        <img src="./assets/dente1.png" alt="Dente do Monstro" class="imgs-catalago-principal">
+                    </div>
+                </a>
+                <div class="produtos-catalago-texto">
+                    <h3>Dente do Monstro</h3>
+                    <h3>Valor: 50.99</h3>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: none; margin-top: 2%; margin-left: 40%;" id="editar_produto">
+            <div style="background-color: #004369; padding: 3%; width: 30%; box-shadow: 1px 1px 1px 4px #a7b0b5;">
+                <h3>Editar Produto:</h3>
+                <input type="hidden" id="id_produto" value=""><br>
+                <h4>Novo nome:</h4>
+                <input type="text" id="editar_nome" placeholder="Nome"><br>
+                <h4>Novo preço:</h4>
+                <input type="number" id="editar_preco" placeholder="Preço" step="0.01"><br>
+                <button onclick="atualizarProduto(event)" style="margin-top: 5%;">Atualizar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h2>Idealizadores:</h2>
+            <h2>Clara Miranda</h2>
+            <h2>Isadora Viott</h2>
+            <h2>Rafael Cardoso</h2>
+        </div>
+        <div>
+            <img src="./assets/logo.png" alt="Logo da Empresa" class="imgfooter">
+        </div>
+        <div>
+            <h2>Todos os produtos são aprovados</h2>
+            <h2>pela Anvisa</h2>
+            <h2>(não nos responsabilizamos</h2>
+            <h2>por efeitos colaterais)</h2>
+        </div>
+    </footer>
+
+    <script src="./back/scriptcadastro.js"></script>
+</body>
+
+</html>

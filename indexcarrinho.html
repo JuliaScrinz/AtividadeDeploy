@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="stylecarrinho.css">
+    <link rel="stylesheet" href="produto1.html">
+</head>
+
+<body>
+
+    <section class="carrinho">
+
+            <div class="logo">
+                <a href="index.html"><img src="./assets/logo.png" alt=""> </a>
+            </div>
+
+            <div class="itens">
+                <h2>Produto</h2>
+                <h2>Preço</h2>
+            </div>
+
+            <div class="produtos" id="produto1">
+                <div class="produtos-img" >
+                    <img src="./assets/concha1.png" alt="">
+                    <h4>Concha da</h4>
+                    <h4>Ariel</h4>
+                </div>
+                <div class="produtos-preco">
+                    <h4>59,00</h4>
+                </div>
+                <div class="produtos-remover">
+                    <button type="button" class="produtos-remover-button" onclick="clearItems()">Remover</button>
+                </div>
+            </div>
+
+            <div class="produtos" id="produto2">
+                <div class="produtos-img">
+                    <img src="./assets/dente1.png" alt="">
+                    <h4>Dente do Monstro</h4>
+                </div>
+                <div class="produtos-preco">
+                    <h4>5.000.000</h4>
+                </div>
+                <div class="produtos-remover">
+                    <button type="button" class="produtos-remover-button" onclick="clearItems2()">Remover</button>
+                </div>
+            </div>
+
+            <div class="produtos" id="produto3">
+                <div class="produtos-img">
+                    <img src="./assets/fertilizante.png" alt="">
+                    <h4>Fertilizante</h4>
+                </div>
+                <div class="produtos-preco">
+                    <h4>300,99</h4>
+                </div>
+                <div class="produtos-remover">
+                    <button type="button" class="produtos-remover-button" onclick="clearItems3()">Remover</button>
+                </div>
+            </div>
+
+            <div class="produtos" id="produto4">
+                <div class="produtos-img" >
+                    <img src="./assets/lucca.png" alt="">
+                    <h4>Lucca</h4>
+                </div>
+                <div class="produtos-preco">
+                    <h4>1999,99</h4>
+                </div>
+                <div class="produtos-remover">
+                    <button type="button" class="produtos-remover-button" onclick="clearItems4()">Remover</button>
+                </div>
+            </div>
+
+            <div class="produtos" id="produto5">
+                <div class="produtos-img" >
+                    <img src="./assets/dinoovo.png" alt="">
+                    <h4>Dinoovo</h4>
+                </div>
+                <div class="produtos-preco">
+                    <h4>20000000.9</h4>
+                </div>
+                <div class="produtos-remover">
+                    <button type="button" class="produtos-remover-button" onclick="clearItems5()">Remover</button>
+                </div>
+            </div>
+
+            <div class="produtos" id="produto6">
+                <div class="produtos-img" >
+                    <img src="./assets/abajurpeixe.png" alt="">
+                    <h4>Peixe Abajuor</h4>
+                </div>
+                <div class="produtos-preco">
+                    <h4>5000.50</h4>
+                </div>
+                <div class="produtos-remover">
+                    <button type="button" class="produtos-remover-button" onclick="clearItems6()">Remover</button>
+                </div>
+            </div>
+
+            <div class="produtos" id="produto7">
+                <div class="produtos-img" >
+                    <img src="./assets/raspastitanic.png" alt="">
+                    <h4>Raspadinha do Titanic</h4>
+                </div>
+                <div class="produtos-preco">
+                    <h4>19999999.99</h4>
+                </div>
+                <div class="produtos-remover">
+                    <button type="button" class="produtos-remover-button" onclick="clearItems7()">Remover</button>
+                </div>
+            </div>
+
+            <div class="produtos" id="produto8">
+                <div class="produtos-img" >
+                    <img src="./assets/cetronaval.png" alt="">
+                    <h4>Cetro Narval</h4>
+                </div>
+                <div class="produtos-preco">
+                    <h4>19,20</h4>
+                </div>
+                <div class="produtos-remover">
+                    <button type="button" class="produtos-remover-button" onclick="clearItems8()">Remover</button>
+                </div>
+            </div>
+
+            <div class="produtos" id="produto9">
+                <div class="produtos-img" >
+                    <img src="./assets/salgadinho.png" alt="">
+                    <h4>Salgaxoso</h4>
+                </div>
+                <div class="produtos-preco">
+                    <h4>299.99</h4>
+                </div>
+                <div class="produtos-remover">
+                    <button type="button" class="produtos-remover-button" onclick="clearItems9()">Remover</button>
+                </div>
+            </div>
+
+            <div class="produtos" id="produto10">
+                <div class="produtos-img" >
+                    <img src="./assets/sushi.png" alt="">
+                    <h4>Sushi Kraken</h4>
+                </div>
+                <div class="produtos-preco">
+                    <h4>9999.20</h4>
+                </div>
+                <div class="produtos-remover">
+                    <button type="button" class="produtos-remover-button" onclick="clearItems10()">Remover</button>
+                </div>
+            </div>
+
+            <div class="produtos" id="produto11">
+                <div class="produtos-img" >
+                    <img src="./assets/peixebolha.png" alt="">
+                    <h4>Bobolha</h4>
+                </div>
+                <div class="produtos-preco">
+                    <h4>7999.99</h4>
+                </div>
+                <div class="produtos-remover">
+                    <button type="button" class="produtos-remover-button" onclick="clearItems11()">Remover</button>
+                </div>
+            </div>
+
+            <div class="total">
+                <h2>Total</h2>
+                <h2 id="totalCompra">0</h2>
+            </div>
+
+            <div class="final" onclick="finalizar()">
+                    <div class="finalizar">
+                        <h1>Finalizar Compra</h1>
+                    </div>
+            </div>
+            
+    </section>
+
+    <main>
+        
+    </main>
+
+    <script src="./back/scriptcarrinho.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+
+.header {
+    background-color: #004369;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "logo elementos-pags" "links         links";
+}
+
+
+
+.img1 {
+    width: 50%;
+}
+
+.img2 {
+    width: 30%;
+}
+
+.img {
+    width: 10%;
+    margin-top: 2%
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8%;
+}
+
+.link {
+    grid-area: links;
+}
+
+.links-config {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+}
+
+.elementos-pags {
+    grid-area: elementos-pags;
+    margin-top: 8%;
+}
+
+h2 {
+    color: #E5DDC8;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+}
+
+h3 {
+    color: #E5DDC8;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* main  */
+
+.img-centro {
+    width: 40%;
+    border: 4px solid #004369;
+}
+
+.container-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h-produto {
+    color: #004369;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+}
+
+.container-legenda {
+    margin-left: 5%;
+    margin-top: 2%;
+    display: flex;
+    margin-bottom: 8%;
+}
+
+.container-legenda-palavras {
+    flex-direction: column;
+    justify-content: start;
+}
+
+.carrinho {
+    display: flex;
+    justify-content: center;
+    background-color: #004369;
+    width: 10%;
+    padding: 1%;
+    border-radius: 50px;
+    margin-left: 60%;
+}
+
+.container-descricao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    flex-direction: column;
+    margin-bottom: 6%;
+    margin-top: 2%;
+}
+
+.descricao-espaco {
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    background-color: #004369;
+    padding: 4%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imgfooter {
+    width: 100%;
+}
+
+.lixeira{
+    width: 3%;
+    height: 3%;
+}

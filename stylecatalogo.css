@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+
+.header {
+    grid-area: header;
+    background-color: #004369;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "logo elementos-pags"
+                         "links         links";
+}
+/* .img0 {
+    width: 15%
+} */
+
+.img1 {
+    width: 40%;
+}
+
+.img2 {
+    width: 40%;
+}
+
+img {
+    width: 10%;
+    margin-top: 2%
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8%;
+}
+
+.link {
+    grid-area: links;
+}
+
+.links-config {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+}
+
+.elementos-pags {
+    grid-area: elementos-pags;
+    margin-top: 8%;
+}
+
+h2 {
+    color: #E5DDC8;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+}
+
+h3 {
+    color: #E5DDC8;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* main  */
+
+.catalogo {
+    color: #004369;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    margin-top: 3%;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    letter-spacing: 6px;
+}
+
+.container-pack {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.pack {
+    color: #004369;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+}
+
+.container-pack-texto {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.container-pack-texto-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.pack-texto {
+    color: #004369;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+}
+
+.retangulo-catalago {
+    background-color: #004369;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 60%;
+    margin-left: 18%;
+    margin-top: 4%;
+}
+
+.retangulo-catalago-imgs {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-catalago {
+    width: 18%;
+}
+
+.produtos {
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+.produtos-texto {
+    color: #004369;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+}
+
+#catalago-linhas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.produtos-catalago {
+    background-color: #004369;
+    width: 18%;
+    height: 10%;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    box-shadow: 1px 1px 1px 4px #a7b0b5;
+}
+
+.produtos-catalago:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    
+}
+
+.produtos-catalago-imagem {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produtos-catalago-texto {
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+.imgs-catalago-principal {
+    width: 70%;
+}
+
+hr {
+    margin-top: 8%;
+    margin-bottom: 6%;
+}
+
+/* footer  */
+
+footer {
+    display: flex;
+    background-color: #004369;
+    padding: 4%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.imgfooter {
+    width: 100%;
+}

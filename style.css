@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: url(./assets/fundo.png);
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px;
+    grid-template-areas: "header"
+        "main";
+}
+
+.header {
+    grid-area: header;
+    
+    background-color: #004369;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "logo elementos-pags"
+                         "links         links";
+}
+
+.img1 {
+    width: 40%;
+    
+}
+
+.img2 {
+    width: 40%;
+}
+
+img {
+    width: 10%;
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8%;
+}
+
+.link{
+    grid-area: links;
+}
+
+.links-config{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+}
+
+.main {
+    grid-area: main;
+}
+
+h2 {
+    color: #E5DDC8;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+}
+
+.container-texto {
+    margin-top: 5%;
+}
+
+#texto {
+    display: flex;
+    justify-content: center;
+}
+
+.nome {
+    color: #E5DDC8;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    margin-top: 6%;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+}
+
+.container-clique {
+    display: flex;
+    justify-content: center;
+}
+
+.cliqueaqui {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    margin-bottom: 8%;
+    background-color: #E5DDC8;
+    width: 20%;
+    padding: 1%;
+    border-radius: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clique {
+    color: #004369;
+    letter-spacing: 2px;
+}

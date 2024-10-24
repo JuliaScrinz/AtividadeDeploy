@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta</title>
+    <link rel="stylesheet" href="./formulario.css">
+</head>
+
+<body>
+    <header class="header">
+
+        
+
+        <div class="logo">
+            <img src="./assets/logo.png" alt="">
+        </div>
+
+        <div class="elementos-pags">
+
+            <a href="./indexcarrinho.html"><img src="./assets/carrinho.png" alt="" class="img1"></a>
+
+            <a href="./indexformulario.html"><img src="./assets/login.png" alt="" class="img2"></a>
+        </div>
+        <div class="links">
+            <div class="links-config">
+                <a href="./index.html">
+                    <h2>Página Inicial</h2>
+                </a>
+                <a href="./indexcatalogo.html">
+                    <h2>Catálago</h2>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+
+    
+            <div id="informacoes" style="display: none;"></div>
+
+            <a href="./indexadm.html" id="adminfuncao" style="display: none;"><button id="submit">Outras funções de Administrador</button></a>
+            
+            <button onclick="sairdaconta(event)" id="submitsair">Sair da conta</button>
+
+        <section class="primeiro-container">
+
+            <div class="primeiro-container-div">
+
+                <div class="primeiro-container-div2">
+                    <h2>Criação de conta</h2>
+                </div>
+
+                <form action="">
+                    <div>
+                        <h3 for="name">Insira seu nome completo</h3>
+                        <input type="text" name="name" id="nome" required placeholder="nome">
+                    </div>
+                    <div>
+                        <h3 for="email">Insira seu nome e-mail</h3>
+                        <input type="email" name="email" id="email" required placeholder="email">
+                    </div>
+                    <div>
+                        <h3 for="password">Insira uma senha</h3>
+                        <input type="password" name="password" id="senha" placeholder="senha">
+                    </div>
+
+
+
+                    <button id="submit" onclick="cadastrar(event)">Confirmar</button>
+
+                </form>
+
+                <div class="primeiro-container-div3">
+                    <h3>Agradecemos a sua confiança!</h3>
+                </div>
+
+                <div class="primeiro-container-div4">
+                    <a href="./indexcatalogo.html">
+                        <h4>Continuar comprando</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="primeiro-container-div">
+
+                <div class="primeiro-container-div2">
+                    <h2>Login de conta</h2>
+                </div>
+               
+                    <div>
+                        <h3 for="name">Insira seu nome</h3>
+                        <input type="text" name="name" id="nome_login" required placeholder="nome">
+                    </div>
+                    <div>
+                        <h3 for="password">Insira sua senha</h3>
+                        <input type="password" name="password" id="senha_login" placeholder="senha">
+                    </div>
+
+                <div class="primeiro-container-div3">
+                    <h3>Agradecemos a sua confiança!</h3>
+                </div>
+
+                <button id="submit_login" onclick="logar(event)">Logar</button>
+
+                <div class="primeiro-container-div4">
+                    <a href="./indexcatalogo.html">
+                        <h4>Continuar comprando</h4>
+                    </a>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <h2>Idealizadores:</h2>
+            <h2>Clara Miranda</h2>
+            <h2>Isadora Viott</h2>
+            <h2>Rafael Cardoso</h2>
+        </div>
+        <div>
+            <img src="./assets/logo.png" alt="" class="imgfooter">
+        </div>
+        <div>
+            <h2>Todos os produtos são aprovados</h2>
+            <h2>pela anvisa</h2>
+            <h2>(não nos responsabilizamos</h2>
+            <h2>por efeitos colaterais)</h2>
+        </div>
+    </footer>
+
+    <script src="./back/scriptcadastro.js"></script>
+
+</body>
+
+</html>

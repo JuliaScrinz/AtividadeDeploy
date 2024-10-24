@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concha da Ariel</title>
+    <link rel="stylesheet" href="./produtos.css">
+</head>
+
+<body>
+    <header class="header">
+
+        
+
+        <div class="logo">
+            <img src="./assets/logo.png" alt="">
+        </div>
+
+        <div class="elementos-pags">
+
+            <a href="./indexcarrinho.html"><img src="./assets/carrinho.png" alt="" class="img1"></a>
+
+            <a href="./indexformulario.html"><img src="./assets/login.png" alt="" class="img2"></a>
+        </div>
+        <div class="links">
+            <div class="links-config">
+                <a href="./index.html">
+                    <h2>Página Inicial</h2>
+                </a>
+                <a href="./indexcatalogo.html">
+                    <h2>Catálago</h2>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container-img">
+            <img src="./assets/concha1.png" alt="" class="img-centro">
+        </div>
+
+        <div class="container-legenda">
+            <div class="container-legenda-palavras">
+                <h1 class="h-produto" id="nomeProduto">Concha da Ariel</h1>
+                <h2 class="h-produto" id="valor">Valor: 59.99</h2>
+                <h2 class="h-produto">Quantidade:</h2>
+                <input type="text" name="quantidade" id="quantidade">
+                <button id="button">Confirmar</button>
+            </div>
+
+            <div class="carrinho" >   
+                <img src="./assets/carrinho.png" alt="" class="img1" onclick="adicionar()">
+            </div>
+        </div>
+
+        <hr>
+
+        <h1 class="h-produto descricao-espaco">Descrição:</h1>
+
+        <div class="container-descricao">
+            <h3 class="h-produto">Vindo direto das mãos de uma princesa marinha de cabelos ruivos,</h3>
+            <h3 class="h-produto">nossa concha magica vai iluminar seu quarto e suas ideias, </h3>
+            <h3 class="h-produto">com diversas cores e sons de animais e biomas marinhos</h3>
+            <h3 class="h-produto"> mas atenção!! se você desejar algo pode acabar perdendo sua voz</h3>
+            
+            <!-- <img src="./assets/lixeira (1).png" alt="" class="lixeira" > -->
+
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div>
+            <h2>Idealizadores:</h2>
+            <h2>Clara Miranda</h2>
+            <h2>Isadora Viott</h2>
+            <h2>Rafael Cardoso</h2>
+        </div>
+        <div>
+            <img src="./assets/logo.png" alt="" class="imgfooter">
+        </div>
+        <div>
+            <h2>Todos os produtos são aprovados</h2>
+            <h2>pela anvisa</h2>
+            <h2>(não nos responsabilizamos</h2>
+            <h2>por efeitos colaterais)</h2>
+        </div>
+    </footer>
+
+    <script src="./back/scriptprodutos.js"></script>
+
+</body>
+
+</html>

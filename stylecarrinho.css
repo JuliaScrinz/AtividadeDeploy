@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+h2 {
+    color: #E5DDC8;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+}
+
+h3 {
+    color: #E5DDC8;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+}
+
+h4 {
+    color: #E5DDC8;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+}
+
+h1 {
+    color: #004369;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    background-image: url(./assets/fundo.png);
+}
+
+
+.carrinho {
+    display: flex;
+    flex-direction: column;
+    background-color: #004369;
+    width: 50%;
+    height: 100%;
+}
+
+.logo{
+    margin-left: 38%;
+}
+
+.itens{
+    margin-top: 10%;
+    margin-right: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+img {
+    width: 40%;
+}
+
+.produtos {
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.produtos-img {
+    margin-left: 10%;
+}
+
+.produtos-preco {
+    margin-right: 25%;
+}
+
+.produtos-remover {
+    margin-right: 18%;
+}
+
+.produtos-remover-button {
+    background-color: #E5DDC8;
+    padding: 15%;
+    border-radius: 20px;
+}
+
+.total{
+    margin-top: 6%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.finalizar {
+    background-color: #E5DDC8;
+    border-radius: 20px;
+    width: 80%;
+    padding: 1%;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.final {
+    margin-top: 6%;
+    margin-left: 60%;
+    margin-bottom: 2%;
+}
+
+#produto1 {
+    visibility: hidden;
+    position: absolute;
+}
+
+#produto2 {
+    visibility: hidden;
+    position: absolute;
+}
+
+#produto3 {
+    visibility: hidden;
+    position: absolute;
+}
+
+#produto4 {
+    visibility: hidden;
+    position: absolute;
+}
+
+#produto5 {
+    visibility: hidden;
+    position: absolute;
+}
+
+#produto6 {
+    visibility: hidden;
+    position: absolute;
+}
+
+#produto7 {
+    visibility: hidden;
+    position: absolute;
+}
+
+#produto8 {
+    visibility: hidden;
+    position: absolute;
+}
+
+#produto9 {
+    visibility: hidden;
+    position: absolute;
+}
+
+#produto10 {
+    visibility: hidden;
+    position: absolute;
+}
+
+
+#produto11 {
+    visibility: hidden;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+{
+  "name": "mercadomistico",
+  "version": "1.0.0",
+  "description": "[![NPM Version][npm-version-image]][npm-url] [![NPM Downloads][npm-downloads-image]][npm-url] [![Node.js Version][node-version-image]][node-version-url] [![Build Status][github-actions-ci-image]][github-actions-ci-url] [![Test Coverage][coveralls-image]][coveralls-url]",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./back/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.11.3",
+    "nodemon": "^3.1.7"
+  }
+}
